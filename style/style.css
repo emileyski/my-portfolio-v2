@@ -385,6 +385,11 @@ section {
   position: relative;
 }
 
+.education-content .content h3 a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
 .education-box .education-content {
   position: relative;
   padding-left: 2rem;
