@@ -41,7 +41,8 @@ window.onscroll = () => {
 
   footer.classList.toggle(
     "show-animate",
-    this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
+    this.innerHeight + this.scrollY >=
+      document.scrollingElement.scrollHeight - 10
   );
 };
 

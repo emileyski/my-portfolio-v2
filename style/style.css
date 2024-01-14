@@ -387,7 +387,7 @@ section {
 
 .education-content .content h3 a {
   color: var(--text-color);
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .education-box .education-content {
