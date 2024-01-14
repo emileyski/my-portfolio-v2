@@ -44,3 +44,21 @@ window.onscroll = () => {
     this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
   );
 };
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
+  const phone = formData.get("phone");
+  const subject = formData.get("subject");
+
+  window.open(
+    `mailto:bohdan.ilienko.work@gmail.com?subject=${subject}&body=Hello!%0A%0A${message}%0A%0ASincerely, ${name}%0A%0APhone: ${phone}%0AEmail: ${email}`,
+    "_blank"
+  );
+});
